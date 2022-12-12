@@ -13,7 +13,7 @@ const Encabezado = () => {
     return <header>
             <div>
                 <div>
-                    <h2>Examen Final de Frontend IV</h2>
+                    <h2>Examen Final de Frontend IV Eliana Zamora Sanabria C1</h2>
                 </div>
                 <nav>
                     <ul>
