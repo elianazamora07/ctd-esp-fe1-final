@@ -47,7 +47,7 @@ export const cambiarPagina = async (
  * @param {Array<number>} arrayEpisodeID
  * @returns {Promise<Episodio | Episodio[]>}
  */
-export const fetchEpisodios = async (id: string | undefined): Promise<Episodio> => {
+export const fetchEpisodios = async (id: (string | undefined)[]): Promise<Episodio> => {
   const response = await fetch(`https://rickandmortyapi.com/api/episode/${id}`);
   const data = await response.json();
   return data;

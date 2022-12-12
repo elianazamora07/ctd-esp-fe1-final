@@ -50,7 +50,7 @@ interface FetchEpisodiosThunkAction
   extends ThunkAction<void, IRootState, unknown, EpisodiosActions> {}
 
 export const obtenerEpisodiosThunk = (
-  episodioId: (string | undefined)
+  episodioId: (string | undefined)[]
 ): FetchEpisodiosThunkAction => {
   return async (dispatch, getState) => {
     try {

@@ -47,8 +47,8 @@ const PaginaDetalle: FC = () => {
   }, [personaje.episode]);
 
   useEffect(() => {
-    dispatch(obtenerEpisodiosThunk('episodioId'));
-  }, [episodioId]);
+    dispatch(obtenerEpisodiosThunk(episodioId));
+  }, [dispatch, episodioId]);
 
   return (
     <div className="container">
